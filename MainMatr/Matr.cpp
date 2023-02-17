@@ -21,6 +21,14 @@ Matrix::Matrix(int size1)
 	matr = new int[size];
 }
 
+Matrix::~Matrix() 
+{
+	for (int i = 0; i < size; i++)
+	{
+		delete[] matr;
+	}
+}
+
 void Matrix::set_size(int size1)
 {
 	if (size1 == 0) throw std::invalid_argument("Error size = 0");

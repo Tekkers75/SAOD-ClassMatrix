@@ -8,6 +8,7 @@ private:
 public: 
 	Matrix();
 	Matrix(int size);
+	~Matrix();
 	void set_size(int size1);
 	int get_size();
 	void set_matr(int** matr1, int size1);

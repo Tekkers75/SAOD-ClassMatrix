@@ -57,6 +57,8 @@ int main()
 		m1.transpose_matr1(Matrix1,Msize);
 		cout << endl;
 		printInFile("test1.txt", Matrix1, Msize, m1.sled_matr(Matrix1,Msize));
+		m1.~Matrix();
+		delete[] Matrix1;
 		
 		/// todo Идея создать трансп. матрицу что бы можно было с ней работать.
 		//int** TransMatr = m1.create_matrix(Msize);
